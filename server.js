@@ -1,6 +1,7 @@
 
 const express = require('express');
 const morgan = require('morgan');
+
 const campsiteRouter = require('./routes/campsiteRouter');
 const promotionRouter = require('./routes/promotionRouter');
 const partnerRouter = require('./routes/partnerRouter');
@@ -27,3 +28,28 @@ app.use((req, res) => {
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+////////////////////////////////////////////
+////  old import example 
+////////////////////////////////////////////
+
+// const myModule = require('myModule');
+
+in the module it would say:
+
+// module.exports = myFunction;
+or named export
+// exports.myFunction = myFunction;
+
+
+////////////////////////////////////////////
+////  new import example
+////////////////////////////////////////////
+
+import myFunction from 'myModule'; (whole thing)
+import { myFunction } from 'myModule'; (named import)
+
+export default myFunction;
+or 
+export const myFunction = myFunction; (named export)

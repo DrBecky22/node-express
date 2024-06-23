@@ -21,7 +21,7 @@ partnerRouter.route('/')
     res.end('Deleting all partners');
 });
 
-campsiteRouter.route('/:partnerId')
+partnerRouter.route('/:partnerId')
 .all((req, res, next) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
